@@ -1,0 +1,21 @@
+print("==============================")
+print("     КАЛЬКУЛЯТОР СКИДОК       ")
+print("==============================")
+
+price = float(input("Введите исходную цену товара (руб): "))
+discount_percent = float(input("Введите размер скидки (от 0 до 100%): "))
+
+discount_amount = price * (discount_percent / 100)
+final_price = price - discount_amount
+
+print("==============================")
+print("Цена без скидки: ", price, "руб.")
+print("Ваша скидка:     ", discount_percent, "%")
+print("Вы сэкономили:   ", discount_amount, "руб.")
+print("Итого к оплате:  ", final_price, "руб.")
+print("==============================")
+
+if discount_percent > 50:
+    print("Скидка супер выгодная!")
+elif discount_percent <7:
+    print("Скидка очень маленькая!")
